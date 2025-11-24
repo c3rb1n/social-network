@@ -1,0 +1,18 @@
+@use "../../common_styles/mixins" as *;
+
+.navbar {
+    @include bg-template;
+    min-width: 150px;
+    max-height: 210px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__inner {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+}

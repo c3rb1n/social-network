@@ -1,0 +1,9 @@
+.icon {
+    fill: var(--main-color);
+
+    &:hover {
+        cursor: pointer;
+        fill: var(--second-color);
+        transition: 0.3s linear;
+    }
+}

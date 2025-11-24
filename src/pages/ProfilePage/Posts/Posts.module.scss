@@ -1,0 +1,6 @@
+@use "../../../common_styles/mixins" as *;
+
+.posts {
+    @include bg-template;
+    grid-area: posts;
+}

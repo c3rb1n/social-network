@@ -1,0 +1,6 @@
+@use "../../../common_styles/mixins" as *;
+
+.infoBlock {
+    @include bg-template;
+    grid-area: info-block;
+}
