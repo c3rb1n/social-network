@@ -1,0 +1,17 @@
+@use '../../common_styles/mixins' as *;
+
+.header {
+    @include bg-template;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &__inner {
+        width: 850px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+}

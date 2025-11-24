@@ -1,0 +1,8 @@
+@use '../../common_styles/mixins' as *;
+
+.usersPage {
+    @include bg-template;
+    width: 100%;
+    height: 845px;
+    box-sizing: border-box;
+}

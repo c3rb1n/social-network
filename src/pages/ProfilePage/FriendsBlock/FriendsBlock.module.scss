@@ -1,0 +1,6 @@
+@use "../../../common_styles/mixins" as *;
+
+.friendsBlock {
+    @include bg-template;
+    grid-area: friends-block;
+}

@@ -1,0 +1,10 @@
+@use "../../common_styles/mixins" as *;
+
+.profilePage {
+    width: 100%;
+    display: grid;
+    grid-template: "avatar-block info-block" "friends-block info-block" "add-post add-post" "posts posts";
+    grid-template-columns: 225px 1fr;
+    grid-template-rows: 275px 150px 75px 300px;
+    gap: 15px;
+}
