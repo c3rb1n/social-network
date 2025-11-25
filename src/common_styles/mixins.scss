@@ -15,3 +15,29 @@
         0 0 50px $color,
         0 0 1em $color;
 }
+
+@mixin box-shadow-template($color, $isInset) {
+    @if $isInset {
+        box-shadow: 
+            0 0 5px 3px $color,
+            0 0 10px 3px $color,
+            inset 0 0 5px 3px $color,
+            inset 0 0 10px 3px $color;
+    } @else {
+        box-shadow: 
+            0 0 5px 3px $color,
+            0 0 10px 3px $color;
+    }
+}
+
+@mixin like-icon-template($color) {
+    .icon {
+        fill: $color;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+            transition: 0.3s linear;
+        }
+    }
+}

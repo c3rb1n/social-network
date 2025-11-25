@@ -1,0 +1,38 @@
+@use '../../../../common_styles/mixins' as *;
+
+.post {
+    @include bg-template;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    &__owner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+    }
+
+    &__name {
+        @include text-shadow-template(var(--main-color));
+        color: var(--main-color);
+    }
+
+    &__text {
+        @include text-shadow-template(var(--second-color));
+    }
+
+    &__likesBlock {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        line-height: 22px;
+    }
+}

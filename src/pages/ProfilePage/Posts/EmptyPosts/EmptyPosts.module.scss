@@ -1,0 +1,33 @@
+@use "../../../../common_styles/mixins" as *;
+
+.emptyPosts {
+    @include bg-template;
+    height: 100%;
+
+    &__inner {
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 25px 20px 40px;
+    }
+
+    &__heading {
+        @include box-shadow-template(var(--main-color), true);
+        @include text-shadow-template(var(--second-color));
+        width: max-content;
+        align-self: start;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px;
+        border: 2px solid var(--accent-color);
+        margin: 0;
+    }
+
+    &__description {
+        @include text-shadow-template(var(--second-color));
+    }
+}
