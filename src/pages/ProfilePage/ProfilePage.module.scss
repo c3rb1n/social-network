@@ -5,6 +5,6 @@
     display: grid;
     grid-template: "avatar-block info-block" "friends-block info-block" "add-post add-post" "posts posts";
     grid-template-columns: 225px 1fr;
-    grid-template-rows: 275px 150px 75px 300px;
+    grid-template-rows: 310px 210px 60px 350px;
     gap: 15px;
 }
