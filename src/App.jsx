@@ -7,17 +7,17 @@ import DialogsPage from './pages/DialogsPage/DialogsPage';
 import UsersPage from './pages/UsersPage/UsersPage';
 import PageUnderConstruction from './pages/PageUnderConstruction/PageUnderConstruction';
 
-const App = () => {
+const App = ({store}) => {
     return (
         <>
             <Header />
             <div className="appWrapper">
-                <Navbar />
+                <Navbar navElements={store.navbar.navElements} />
                 <Routes>
-                    <Route path="/profile" Component={ProfilePage} />
-                    <Route path="/dialogs" Component={DialogsPage} />
-                    <Route path="/users" Component={UsersPage} />
-                    <Route path="*" Component={PageUnderConstruction} />
+                    <Route path="/profile" element={<ProfilePage profilePage={store.profilePage} />} />
+                    <Route path="/dialogs" element={<DialogsPage />} />
+                    <Route path="/users" element={<UsersPage />} />
+                    <Route path="*" element={<PageUnderConstruction />} />
                 </Routes>
             </div>
         </>

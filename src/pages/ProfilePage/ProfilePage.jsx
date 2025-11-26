@@ -5,14 +5,14 @@ import InfoBlock from './InfoBlock/InfoBlock.JSX';
 import AddPost from './AddPost/AddPost';
 import Posts from './Posts/Posts';
 
-const ProfilePage = () => {
+const ProfilePage = ({profilePage}) => {
     return (
         <main className={styles.profilePage}>
             <AvatarBlock />
             <FriendsBlock />
             <InfoBlock />
             <AddPost />
-            <Posts />
+            <Posts posts={profilePage.posts} />
         </main>
     );
 };

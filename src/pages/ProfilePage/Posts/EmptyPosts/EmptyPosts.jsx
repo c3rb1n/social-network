@@ -1,5 +1,5 @@
 import styles from './EmptyPosts.module.scss';
-import DocumentIcon from '../../../../components/common/Icons/DocumentIcon/DocumentIcon';
+import getIcon from '../../../../utils/getIcon';
 
 const EmptyPosts = () => {
     return (
@@ -8,7 +8,7 @@ const EmptyPosts = () => {
                 <h2 className={styles.emptyPosts__heading}>
                     No posts yet
                 </h2>
-                <DocumentIcon />
+                {getIcon('document')}
                 <div className={styles.emptyPosts__description}>There are no posts here yet</div>
             </div>
         </div>
