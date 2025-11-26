@@ -1,6 +1,5 @@
-import EmptyHeartIcon from '../../../../components/common/Icons/EmptyHeartIcon/EmptyHeartIcon';
-import FilledHeartIcon from '../../../../components/common/Icons/FilledHeartIcon/FilledHeartIcon';
 import styles from './Post.module.scss';
+import getIcon from '../../../../utils/getIcon';
 
 const Post = ({avatar, name, postText, likesCount, isLiked}) => {
     return (
@@ -12,7 +11,7 @@ const Post = ({avatar, name, postText, likesCount, isLiked}) => {
                 </div>
                 <div className={styles.post__text}>{postText}</div>
                 <div className={styles.post__likesBlock}>
-                    {isLiked ? <FilledHeartIcon /> : <EmptyHeartIcon />}
+                    {isLiked ? getIcon('filledHeart') : getIcon('emptyHeart')}
                     <div className={styles.post__likesCount}>{likesCount}</div>
                 </div>
             </div>
